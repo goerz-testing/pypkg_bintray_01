@@ -99,7 +99,7 @@ upload: bootstrap clean-build dist ## package and upload a release to pypi.org
 	$(TOX) -e run-cmd -- twine upload dist/*
 
 release: bootstrap ## Create a new version, package and upload it
-	python3.8 ./scripts/release.py
+	$(TOX) -e run-cmd -- python ./scripts/release.py
 
 dist: bootstrap ## builds source and wheel package
 	$(TOX) -e run-cmd -- python setup.py sdist
