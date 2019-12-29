@@ -14,15 +14,13 @@ PyPkg Bintray 01
    :alt: PyPkg Bintray 01 on the Python Package Index
    :target: https://pypi.python.org/pypi/pypkg_bintray_01
 
-
-
 .. image:: https://img.shields.io/travis/goerz-testing/pypkg_bintray_01.svg
    :alt: Travis Continuous Integration
    :target: https://travis-ci.org/goerz-testing/pypkg_bintray_01
 
-.. image:: https://img.shields.io/badge/appveyor-no%20id-red.svg
+.. image:: https://ci.appveyor.com/api/projects/status/9ybnuwelpliqkcfu?svg=true
    :alt: AppVeyor Continuous Integration
-   :target: https://ci.appveyor.com/project/goerz-testing/pypkg_bintray_01
+   :target: https://ci.appveyor.com/project/goerz/pypkg-bintray-01
 
 .. image:: https://codecov.io/gh/goerz-testing/pypkg_bintray_01/branch/master/graph/badge.svg
    :alt: Codecov
