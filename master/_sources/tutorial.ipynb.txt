@@ -16,7 +16,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "pypkg_bintray_01  0.0.1-dev\n",
+      "pypkg_bintray_01  0.1.0\n",
       "CPython 3.6.7\n",
       "IPython 7.1.1\n"
      ]
@@ -54,7 +54,7 @@
     {
      "data": {
       "text/plain": [
-       "'0.0.1-dev'"
+       "'0.1.0'"
       ]
      },
      "execution_count": 2,
