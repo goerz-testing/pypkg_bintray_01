@@ -25,6 +25,16 @@ def write_index_html(default_branch):
     subprocess.run(['git', 'add', 'index.html'], check=True)
 
 
+def ensure_no_jekyll():
+    """Create a .nojekyll file.
+
+    This prevents Github from messing with folders that start with an
+    underscore.
+    """
+    Path('.jekyll').touch()
+    subprocess.run(['git', 'add', '.jekyll'], check=True)
+
+
 def find_downloads(folder):
     """Find artifact links in _downloads file.
 
@@ -56,6 +66,7 @@ def main():
         latest_release = 'master'
     print("Write index.html")
     write_index_html(latest_release)
+    ensure_no_jekyll()
     print("Write versions.json")
     write_versions_json(versions_data, outfile='versions.json')
     print("DONE post-processing")
