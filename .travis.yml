@@ -13,23 +13,13 @@ matrix:
       python: 3.8
       env:
         - DOCS="true"
-        # TODO: Doctr deploy key
-        #       * Run `tox -e run-cmd -- doctr configure --no-upload-key --no-authenticate --keypath docs/doctr_deploy_key`
-        #       * Follow doctr's instructions regarding setting up the deploy key on Github
-        #       * Replace the "secure: ..." line below with the "secure" line printed by doctr
-        # - secure: ...
-        # TODO: Environment variables for deployment of documentation artifcats to Bintray
-        #       * Set up a Bintray repo and package (preferably mirroring the username/repo name on github
-        #       * Set BINTRAY_USER, BINTRAY_REPO, BINTRAY_PACKAGE (un-comment lines)
-        #       * run `tox -e run-travis-encrypt`
-        #       * paste in e.g. "BINTRAY_TOKEN=0a23802f7c9907f9087e37f21346a3a2805feb1a" when prompted for "Password"
-        #       * replace the "secure: ..." line below with the "secure" line printed by travis-encrypt
-        # - BINTRAY_USER=goerz-testing
-        # - BINTRAY_SUBJECT=goerz-testing
-        # - BINTRAY_REPO=pypkg_bintray_01
-        # - BINTRAY_PACKAGE=pypkg_bintray_01
-        # # BINTRAY_TOKEN
-        # - secure: ...
+        - secure: "RWgqB8XGCA7U6pxFThxPOSF2vUy5/gRNtBTriqrWufyb4kz6xMc4C7h3Z6UP3NSPf9hkg5JrgCSDotDCZ6N4P5UEsQjjSck5QEAYILwL2ci2u7oXJQAqpE80UrpcVcpc/03c/8uRJt8bQq3MG9zSKFl7nfIZqPl9/OZdpFZrBjejhyEB3Rxjn7WkZscDhM1jvQScDFudDPIjOBzuxI7BpdeUoNxxCb4KdbpVblmbEERzT8NRkammT8iil7c/u/j96WRPsSi78oaAv3k3UkgUfJUYNlFglgQ5l8XhJ80pwtH+PodgHcsOQVmSS1zUlBL8oFmp8b84aW63S9pwvcYD6riU8KBKjV5KCGWkl85WZaUqnBH4S/SB2f7ONctvdVJY9+sZQnBH7e6uiYSbKcgrlOCq7GlbKYIbuR0I36VYIehGe/O/dp4dpeptM1FA4/tDFDXLjB76YXwSRASD0+8VXJXtTYUsS7OqkwJhJP6wDsD9nTlFgmLvIcBqBOXFJjt+zTPXyYcquapFMjJDK4KKgOK1k8P85w0sNpQ/k60tvTwz52Y8bF+dauF4j2gJKNwglCRMqeuEhZfSWWCtxVPkl9dS3Y22U12UG17N53pK0sQ4fjhoxj1UAHtXHJOrqtFPO7cfPD1WFwGB2XkhrehrshAmeCDpiCVL4xwv2G7r3+4="
+        - BINTRAY_USER=goerz
+        - BINTRAY_SUBJECT=goerz-testing
+        - BINTRAY_REPO=pypkg_bintray_01
+        - BINTRAY_PACKAGE=pypkg_bintray_01
+        # BINTRAY_TOKEN
+        - secure: qTcLiEQB3Bw6WdIK6tDTcBVJ9j8PBwNjJYONuIWWEhxLLzdnyj6dX8Z3F5Ck8sZ+9OoHXRN2o7gofQA4XPOh08pCCX5TPz9Pyg3zwSzcJASvSFhFYD6CbohZDVMCmOyNMbUFGs9ahdzZzt9Zysh3PGCzHvCob3wvBSbPh2hpUQDzd4NkCIOgyM/UU0PT/osoxY4N/m/C5FGgyDvnFvyp9zYZuo0NLxSfW8iqQsaJv8Nq9dVtqY+mXVGESApC1e4QyR4TOM5VMpaZPZuSodvzqodccxIWGHt70jc9fcX6S1rMT4V0R2NvT2Iv/NqqPE/BgTURc+NoP0yHXa2AIXvCCpsBSK0F73k8H3UfqTvNW7ePwhB9aXgBCYO5kMcNeaQxLYd3MqfjBo4emeX4VsdNHK59syZ69h1lFi12eDOffnDFoD0qaBlMNoxhNQ6IMstoOZhbjgNevJHpeJ45wciiH1db+cf+fLUo2FNEtAsplHwd/uj+Og1MhbZQ1/OORtyhzYbhHvX5A12NfBikHuv7dEV0fnzRoXjAmGAyCIg1aX5O9/sBAwMCL92ft0Jyqk/EF/rDE23Fmfa7gPbEg60SMwjk9b7W7IZAi9Aa3JZTXVMl4qPFxt/wqQXCJH6AbQ1tZWGBmUy6MENLPKJ5jUWHIwonbQ4+URgCK2z1P6Fxhwg=
     - name: Python 3.6
       python: 3.6
       env: TOXENV=py36-test
