@@ -20,6 +20,9 @@ matrix:
         - BINTRAY_PACKAGE=pypkg_bintray_01
         # BINTRAY_TOKEN
         - secure: qTcLiEQB3Bw6WdIK6tDTcBVJ9j8PBwNjJYONuIWWEhxLLzdnyj6dX8Z3F5Ck8sZ+9OoHXRN2o7gofQA4XPOh08pCCX5TPz9Pyg3zwSzcJASvSFhFYD6CbohZDVMCmOyNMbUFGs9ahdzZzt9Zysh3PGCzHvCob3wvBSbPh2hpUQDzd4NkCIOgyM/UU0PT/osoxY4N/m/C5FGgyDvnFvyp9zYZuo0NLxSfW8iqQsaJv8Nq9dVtqY+mXVGESApC1e4QyR4TOM5VMpaZPZuSodvzqodccxIWGHt70jc9fcX6S1rMT4V0R2NvT2Iv/NqqPE/BgTURc+NoP0yHXa2AIXvCCpsBSK0F73k8H3UfqTvNW7ePwhB9aXgBCYO5kMcNeaQxLYd3MqfjBo4emeX4VsdNHK59syZ69h1lFi12eDOffnDFoD0qaBlMNoxhNQ6IMstoOZhbjgNevJHpeJ45wciiH1db+cf+fLUo2FNEtAsplHwd/uj+Og1MhbZQ1/OORtyhzYbhHvX5A12NfBikHuv7dEV0fnzRoXjAmGAyCIg1aX5O9/sBAwMCL92ft0Jyqk/EF/rDE23Fmfa7gPbEg60SMwjk9b7W7IZAi9Aa3JZTXVMl4qPFxt/wqQXCJH6AbQ1tZWGBmUy6MENLPKJ5jUWHIwonbQ4+URgCK2z1P6Fxhwg=
+      addons:
+        apt_packages:
+          - pandoc
     - name: Python 3.6
       python: 3.6
       env: TOXENV=py36-test
