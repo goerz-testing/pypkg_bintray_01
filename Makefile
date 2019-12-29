@@ -99,7 +99,9 @@ upload: bootstrap clean-build dist ## package and upload a release to pypi.org
 	$(TOX) -e run-cmd -- twine upload dist/*
 
 release: bootstrap ## Create a new version, package and upload it
-	python3.8 ./scripts/release.py
+	python3.8 -m venv .venv/release
+	.venv/release/bin/python -m pip install click gitpython pytest
+	.venv/release/bin/python ./scripts/release.py
 
 dist: bootstrap ## builds source and wheel package
 	$(TOX) -e run-cmd -- python setup.py sdist

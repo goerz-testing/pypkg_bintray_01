@@ -41,7 +41,7 @@ FILES_TO_DELETE = {
         (DOCSDIR, '*.ipynb.log'),
         (DOCSDIR, '**/.ipynb_checkpoints'),
     ],
-    'venv': [ROOT / '.tox'],
+    'venv': [ROOT / '.tox', ROOT / '.venv'],
 }
 
 
